@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separator Ribuan</title>
+    <script>
+        function formatNumber(value) {
+            // Menghapus semua karakter yang bukan angka
+            value = value.replace(/\D/g, '');
+            // Menambahkan separator ribuan
+            return value.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function onInputChange(event) {
+            // Mendapatkan nilai input
+            const input = event.target;
+            // Memformat angka dan mengatur kembali ke input
+            input.value = formatNumber(input.value);
+        }
+    </script>
+</head>
+<body>
+    <h1>Input Angka dengan Separator Ribuan</h1>
+    <input type="text" id="numberInput" oninput="onInputChange(event)" placeholder="Masukkan angka" />
+</body>
+</html>
