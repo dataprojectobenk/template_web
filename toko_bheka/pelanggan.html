@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Bheka</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class=" bg-body-tertiary">
+    <div id="main" class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-flex flex-column  bg-primary shadow vh-100">
+            <div class="logo">
+                <img src="assets/img/kasir-logo.jpg" alt="" srcset="">
+            </div>
+            <div class="menu p-2 d-flex flex-column gap-2">
+                <a href="#"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50 active">
+                    <span class="">Dashboard</span>
+                    <i class="bi-speedometer2 "></i>
+                </a>
+                <a href="#"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50">
+                    <span class="">Pelanggan</span>
+                    <i class="bi bi-person-gear "></i>
+                </a>
+                <a href="#"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50">
+                    <span class="">Barang</span>
+                    <i class="bi-bag "></i>
+                </a>
+                <a href="#"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50">
+                    <span class="">Transaksi</span>
+                    <i class="bi-cart "></i>
+                </a>
+                <a href="#"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50">
+                    <span class="">Laporan</span>
+                    <i class="bi-table "></i>
+                </a>
+            </div>
+            <div class="logout p-2 mt-auto">
+                <a href="" class="btn btn-danger w-100 d-flex px-3 justify-content-between align-content-center">
+                    <span>Logout</span>
+                    <i class="bi-arrow-right-circle"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Akhir Sidebar -->
+        <!-- Konten Utama -->
+        <div id="konten-utama">
+            <div class="container-fluid">
+                <div class="header d-flex w-100 py-3">
+                    <h5 class="h4 fw-bold text-black-50 text-uppercase">Data Pelanggan</h5>
+                </div><!-- Akhir header -->
+
+                <!-- Flexibel Konten -->
+                <div class="card card-body bg-white border-0 shadow">
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-md-6 col-12 mb-2">
+                                <label for="id_pelanggan" class="form-label text-black-50">ID Pelanggan</label>
+                                <input type="text" name="id_pelanggan" id="id_pelanggan" class="form-control bg-body-tertiary"
+                                    placeholder="Masukkan  ID Pelanggan" readonly>
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <label for="nama_pelanggan" class="form-label text-black-50">Nama Pelanggan</label>
+                                <input type="text" name="nama_pelanggan" id="nama_pelanggan" class="form-control"
+                                    placeholder="Masukkan Nama Pelanggan">
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <label for="alamat" class="form-label text-black-50">Alamat</label>
+                                <input type="text" name="alamat" id="alamat" class="form-control"
+                                    placeholder="Masukkan alamat">
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <label for="telepon" class="form-label text-black-50">Telepon</label>
+                                <input type="text" name="telepon" id="telepon" class="form-control"
+                                    placeholder="Masukkan telepon">
+                            </div>
+                            <div class="d-flex justify-content-end gap-2">
+                                <a href="#" class="btn btn-sm btn-danger bg-gradient px-5">Hapus <i class="bi-trash"></i></a>
+                                <button class="btn btn-sm btn-success bg-gradient px-5">Batal <i class="bi-x"></i></button>
+                                <button class="btn btn-sm btn-primary bg-gradient px-5">Simpan <i class="bi-save2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card card-body bg-white mt-3 border-0 shadow">
+                    <table class="table table-sm table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID Pelanggan</th>
+                                <th>Nama Pelanggan</th>
+                                <th>Alamat</th>
+                                <th>Telepon</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>123 Jl. Kebon Jeruk</td>
+                                <td>08123456789</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"><i class="bi-pencil small"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Akhir Flexibel Konten -->
+            </div>
+        </div>
+        <!-- Akhir Konten Utama -->
+    </div>
+</body>
+
+</html>
