@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Bheka</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class=" bg-body-tertiary">
+    <div id="main" class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-flex flex-column  bg-primary shadow vh-100">
+            <div class="logo">
+                <img src="assets/img/kasir-logo.jpg" alt="" srcset="">
+            </div>
+            <div class="menu p-2 d-flex flex-column gap-2">
+                <a href="index.html"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50 active">
+                    <span class="">Dashboard</span>
+                    <i class="bi-speedometer2 "></i>
+                </a>
+                <a href="pelanggan.html"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50">
+                    <span class="">Pelanggan</span>
+                    <i class="bi bi-person-gear "></i>
+                </a>
+                <a href="barang.html"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50">
+                    <span class="">Barang</span>
+                    <i class="bi-bag "></i>
+                </a>
+                <a href="transaksi.html"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50">
+                    <span class="">Transaksi</span>
+                    <i class="bi-cart "></i>
+                </a>
+                <a href="#"
+                    class="btn btn-light w-100 d-flex justify-content-between align-items-center px-4 text-black-50">
+                    <span class="">Laporan</span>
+                    <i class="bi-table "></i>
+                </a>
+            </div>
+            <div class="logout p-2 mt-auto">
+                <a href="" class="btn btn-danger w-100 d-flex px-3 justify-content-between align-content-center">
+                    <span>Logout</span>
+                    <i class="bi-arrow-right-circle"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Akhir Sidebar -->
+        <!-- Konten Utama -->
+        <div id="konten-utama">
+            <div class="container-fluid">
+                <div class="header d-flex w-100 py-3">
+                    <h5 class="h4 fw-bold text-black-50 text-uppercase">Transaksi</h5>
+                </div><!-- Akhir header -->
+
+                <!-- Flexibel Konten -->
+                <div class="card card-body bg-white border-0 shadow">
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-md-6 col-12 mb-2">
+                                <label for="id_barang" class="form-label text-black-50">ID Barang</label>
+                                <input type="text" name="id_barang" id="id_barang" class="form-control bg-body-tertiary"
+                                    placeholder="Masukkan  ID Barang" readonly>
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <label for="nama_barang" class="form-label text-black-50">Nama Barang</label>
+                                <input type="text" name="nama_barang" id="nama_barang" class="form-control"
+                                    placeholder="Masukkan Nama Barang">
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <label for="harga" class="form-label text-black-50">Harga</label>
+                                <input type="text" name="harga" id="harga" class="form-control"
+                                    placeholder="Masukkan harga">
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <label for="stok" class="form-label text-black-50">stok</label>
+                                <input type="text" name="stok" id="stok" class="form-control"
+                                    placeholder="Masukkan stok">
+                            </div>
+                            <div class="d-flex justify-content-end gap-2">
+                                <a href="#" class="btn btn-sm btn-danger bg-gradient px-5">Hapus <i class="bi-trash"></i></a>
+                                <button class="btn btn-sm btn-success bg-gradient px-5">Batal <i class="bi-x"></i></button>
+                                <button class="btn btn-sm btn-primary bg-gradient px-5">Simpan <i class="bi-save2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card card-body bg-white mt-3 border-0 shadow">
+                    <table class="table table-sm table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID Barang</th>
+                                <th>Nama Barang</th>
+                                <th>Harga</th>
+                                <th>Jumlah</th>
+                                <th>Sub Total</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!-- Akhir Flexibel Konten -->
+            </div>
+        </div>
+        <!-- Akhir Konten Utama -->
+    </div>
+</body>
+
+</html>
